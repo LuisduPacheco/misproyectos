@@ -80,6 +80,45 @@ public class UsuarioDAO implements ConsultasUsuario {
         }
         return info;
     }
+
+    @Override
+    public boolean actualizarU(UsuarioVO u) {
+        Conector c = new Conector();
+        try {
+            c.conectar();
+            String query = "UPDATE bdjuego.usuario "  
+                    +"SET nombre_usuario = '"+u.getNombreUsuario()+"', "
+                    +"apellido_usuario = '"+u.getApellidoUsuario()+"', "
+                    +"edad_usuario = "+u.getEdadUsuario()+", "
+                    +"username = '"+u.getUserName()+"', "
+                    +"contrasenia = '"+u.getContrasenia()+"', "
+                    +"id_rol_usuario_fk = "+u.getIdRolUsuarioFk()+" "
+                    +"WHERE id_usuario = "+u.getIdUsuario()+"";
+                    c.consultasMultiples(query);
+        } catch (Exception e) {
+            System.err.println("Error[MActU]: "+e.getMessage());
+            c.desconectar();
+        }
+    c.desconectar();
+    return true;
+    }
+
+    @Override
+    public boolean eliminarU(UsuarioVO u) {
+        Conector c = new Conector();
+        try {
+            c.conectar();
+            String query = "DELETE FROM bdjuego.usuario "+
+                            "WHERE id_usuario = "+u.getIdUsuario();
+            c.consultasMultiples(query);
+        } catch (Exception e) {
+            System.err.println("Error[MElimina]: "+e.getMessage());
+            c.desconectar();
+            return false;
+        }    
+        c.desconectar();
+        return true;
+    }
     
     
 

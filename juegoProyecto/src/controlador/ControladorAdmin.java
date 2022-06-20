@@ -32,6 +32,7 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
 
     }
 
+    //MOSTRAR LOS DATOS EN LA TABLA
     public void mostrar() {
         DefaultTableModel m = new DefaultTableModel() {
             @Override
@@ -54,6 +55,7 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
         vAdmin.tblMostrar.setModel(m);
     }
 
+    //METODO PARA REGISTRAR UN NUEVO USUARIO
     public void insertar() {
         this.uvo.setNombreUsuario(this.vAdmin.txtNombreU.getText());
         this.uvo.setApellidoUsuario(this.vAdmin.txtApellidoU.getText());
@@ -78,24 +80,124 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
 
     }
 
+    //METODO PARA SETEAR DATOS 
+    public void setDatosU() {
+        int numRow;
+        numRow = vAdmin.tblMostrar.getSelectedRow();
+
+        vAdmin.txtIdU.setText(String.valueOf(vAdmin.tblMostrar.getValueAt(numRow, 0)));
+        vAdmin.txtNombreU.setText(String.valueOf(vAdmin.tblMostrar.getValueAt(numRow, 1)));
+        vAdmin.txtApellidoU.setText(String.valueOf(vAdmin.tblMostrar.getValueAt(numRow, 2)));
+        vAdmin.txtEdadU.setText(String.valueOf(vAdmin.tblMostrar.getValueAt(numRow, 3)));
+        vAdmin.txtUsuario.setText(String.valueOf(vAdmin.tblMostrar.getValueAt(numRow, 4)));
+        vAdmin.txtRolU.setText(String.valueOf(vAdmin.tblMostrar.getValueAt(numRow, 5)));
+
+    }
+
+    //Metodo para Actualizar datos
+    public void actualizaDatos() {
+        uvo.setNombreUsuario(vAdmin.txtNombreU.getText());
+        uvo.setApellidoUsuario(vAdmin.txtApellidoU.getText());
+        uvo.setEdadUsuario(Integer.parseInt(vAdmin.txtEdadU.getText()));
+        uvo.setUserName(vAdmin.txtUsuario.getText());
+        uvo.setIdUsuario(Integer.parseInt(vAdmin.txtIdU.getText()));
+        uvo.setIdRolUsuarioFk(Integer.parseInt(vAdmin.txtRolU.getText()));
+
+        if (udao.actualizarU(uvo) == true) {
+            vAdmin.jopMensaje.showMessageDialog(vAdmin, "Actualización correcta");
+            vAdmin.txtApellidoU.setText("");
+            vAdmin.txtContrasenia.setText("");
+            vAdmin.txtEdadU.setText("");
+            vAdmin.txtIdU.setText("");
+            vAdmin.txtNombreU.setText("");
+            vAdmin.txtRolU.setText("");
+            vAdmin.txtUsuario.setText("");
+
+        } else {
+            vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, revise los datos");
+        }
+    }
+
+    //Metodo para Eliminar 
+    public void eliminaU() {
+        uvo.setIdUsuario(Integer.parseInt(vAdmin.txtIdU.getText()));
+        udao.eliminarU(uvo);
+        if (udao.eliminarU(uvo) == true) {
+            vAdmin.jopMensaje.showMessageDialog(vAdmin, "Registro ID Usuario " + vAdmin.txtIdU.getText() + ", eliminado correctamente");
+            vAdmin.txtApellidoU.setText("");
+            vAdmin.txtContrasenia.setText("");
+            vAdmin.txtEdadU.setText("");
+            vAdmin.txtIdU.setText("");
+            vAdmin.txtNombreU.setText("");
+            vAdmin.txtRolU.setText("");
+            vAdmin.txtUsuario.setText("");
+        } else {
+            vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, revise los campos");
+        }
+
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
+
+        //BOTÓN Registrar
         if (e.getSource() == vAdmin.btnRegistra) {
             if (vAdmin.txtIdU.getText().equals("")) {
                 if (!vAdmin.txtApellidoU.getText().equals("") && !vAdmin.txtContrasenia.getText().equals("") && !vAdmin.txtEdadU.getText().equals("")
                         && !vAdmin.txtNombreU.getText().equals("") && !vAdmin.txtUsuario.getText().equals("")) {
                     if (vAdmin.txtRolU.getText().equals("1") || vAdmin.txtRolU.getText().equals("2") || vAdmin.txtRolU.getText().equals("3") || vAdmin.txtRolU.getText().equals("4")) {
                         this.insertar();
-                        
-                    }else{
+
+                    } else {
                         vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, Rol fuera de rango");
                     }
-                }else{
+                } else {
                     vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, llene los campos solicitados");
                 }
-            }else {
-                vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, Usuario con ID "+vAdmin.txtIdU.getText()+" ya está registrado");
+            } else {
+                vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, Usuario con ID " + vAdmin.txtIdU.getText() + " ya está registrado");
             }
+        }
+
+        //BOTÓN Actualizar
+        if (e.getSource() == vAdmin.btnActualiza) {
+            if (!vAdmin.txtIdU.getText().equals("")) {
+                if (!vAdmin.txtApellidoU.getText().equals("") && !vAdmin.txtContrasenia.getText().equals("") && !vAdmin.txtEdadU.getText().equals("")
+                        && !vAdmin.txtNombreU.getText().equals("") && !vAdmin.txtUsuario.getText().equals("")) {
+                    if (vAdmin.txtRolU.getText().equals("1") || vAdmin.txtRolU.getText().equals("2") || vAdmin.txtRolU.getText().equals("3") || vAdmin.txtRolU.getText().equals("4")) {
+                        this.actualizaDatos();
+                        this.mostrar();
+
+                    } else {
+                        vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, Rol fuera de rango");
+                    }
+                } else {
+                    vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, llene los campos solicitados");
+                }
+            } else {
+                vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, Usuario con ID " + vAdmin.txtIdU.getText() + " no existe");
+            }
+        }
+
+        //BOTÓN Eliminar
+        if (e.getSource() == vAdmin.btnElimina) {
+            if (!vAdmin.txtIdU.getText().equals("")) {
+                if (!vAdmin.txtApellidoU.getText().equals("") && !vAdmin.txtEdadU.getText().equals("")
+                        && !vAdmin.txtNombreU.getText().equals("") && !vAdmin.txtUsuario.getText().equals("")) {
+                    if (vAdmin.txtRolU.getText().equals("1") || vAdmin.txtRolU.getText().equals("2") || vAdmin.txtRolU.getText().equals("3") || vAdmin.txtRolU.getText().equals("4")) {
+                        this.eliminaU();
+                        this.mostrar();
+
+                    } else {
+                        vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, Rol fuera de rango");
+                    }
+                } else {
+                    vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, llene los campos solicitados");
+                }
+            } else {
+                vAdmin.jopMensaje.showMessageDialog(vAdmin, "Error, Usuario con ID " + vAdmin.txtIdU.getText() + " no existe");
+            }
+
         }
     }
 
@@ -131,6 +233,10 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        if (e.getClickCount() == 2) {
+            this.setDatosU();
+        }
+
     }
 
     @Override
