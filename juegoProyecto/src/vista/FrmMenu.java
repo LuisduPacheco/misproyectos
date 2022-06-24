@@ -39,7 +39,7 @@ public class FrmMenu extends javax.swing.JFrame {
 
         btnInter.setText("Admin");
 
-        btnPrin.setText("Admin");
+        btnPrin.setText("Principiante");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -52,7 +52,7 @@ public class FrmMenu extends javax.swing.JFrame {
                     .addComponent(btnInter)
                     .addComponent(btnAvan)
                     .addComponent(btnAdmin))
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(157, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
