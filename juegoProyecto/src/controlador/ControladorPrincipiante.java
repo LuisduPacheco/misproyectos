@@ -207,6 +207,8 @@ public class ControladorPrincipiante implements ActionListener, WindowListener {
                                                                   "Puntaje: "+this.pri.getI());
                     this.vPri.txtResultado6.setEditable(false);
                     this.vPri.btnComprobar6.setEnabled(false);
+                    this.vPri.btnFinaliza.setEnabled(true);
+                    
                    
                 } else {
                     vPri.jopMensaje.showMessageDialog(vPri, "Resultado incorrecto");

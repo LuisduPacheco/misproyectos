@@ -26,10 +26,10 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnAdmin" min="-2" pref="85" max="-2" attributes="0"/>
+                  <Component id="btnAvan" min="-2" pref="85" max="-2" attributes="0"/>
                   <Component id="btnPrin" min="-2" max="-2" attributes="0"/>
                   <Component id="btnInter" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnAvan" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnAdmin" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="157" max="32767" attributes="0"/>
           </Group>
@@ -39,9 +39,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-              <Component id="btnAdmin" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnAvan" min="-2" max="-2" attributes="0"/>
+              <Component id="btnAdmin" min="-2" pref="30" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="btnAvan" min="-2" pref="23" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnInter" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -62,7 +62,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAvan">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Admin"/>
+        <Property name="text" type="java.lang.String" value="Avanzado"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -70,8 +70,11 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnInter">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Admin"/>
+        <Property name="text" type="java.lang.String" value="Intermedio"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInterActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>

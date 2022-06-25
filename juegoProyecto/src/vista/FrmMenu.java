@@ -35,9 +35,14 @@ public class FrmMenu extends javax.swing.JFrame {
 
         btnAdmin.setText("Admin");
 
-        btnAvan.setText("Admin");
+        btnAvan.setText("Avanzado");
 
-        btnInter.setText("Admin");
+        btnInter.setText("Intermedio");
+        btnInter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInterActionPerformed(evt);
+            }
+        });
 
         btnPrin.setText("Principiante");
 
@@ -48,19 +53,19 @@ public class FrmMenu extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(156, 156, 156)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAvan, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnPrin)
-                    .addComponent(btnInter)
-                    .addComponent(btnAvan)
-                    .addComponent(btnAdmin))
+                    .addComponent(btnInter))
                 .addContainerGap(157, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(57, 57, 57)
-                .addComponent(btnAdmin)
-                .addGap(18, 18, 18)
-                .addComponent(btnAvan)
+                .addComponent(btnAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnAvan, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnInter)
                 .addGap(18, 18, 18)
@@ -70,6 +75,10 @@ public class FrmMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnInterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnInterActionPerformed
 
     /**
      * @param args the command line arguments
