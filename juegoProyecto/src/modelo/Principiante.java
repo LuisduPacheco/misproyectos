@@ -33,15 +33,10 @@ public class Principiante {
         this.i = i;
     }
 
-    
-    
-    
-   
-
     //OPERACIONES 
     public int resta() {
         int r;
-        r = (int)(this.n1 - this.n2);
+        r = (int) (this.n1 - this.n2);
         return r;
     }
 
@@ -50,12 +45,14 @@ public class Principiante {
         s = (this.n1 + this.n2);
         return s;
     }
-    public int multiplicacion(){
+
+    public int multiplicacion() {
         int m;
         m = (this.n1 * this.n2);
-        return m;    
+        return m;
     }
-    public int division(){
+
+    public int division() {
         int d;
         d = (this.n1 / this.n2);
         return d;

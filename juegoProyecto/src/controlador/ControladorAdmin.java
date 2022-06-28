@@ -100,6 +100,7 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
         uvo.setApellidoUsuario(vAdmin.txtApellidoU.getText());
         uvo.setEdadUsuario(Integer.parseInt(vAdmin.txtEdadU.getText()));
         uvo.setUserName(vAdmin.txtUsuario.getText());
+        uvo.setContrasenia(vAdmin.txtContrasenia.getText());
         uvo.setIdUsuario(Integer.parseInt(vAdmin.txtIdU.getText()));
         uvo.setIdRolUsuarioFk(Integer.parseInt(vAdmin.txtRolU.getText()));
 

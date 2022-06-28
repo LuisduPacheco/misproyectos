@@ -6,17 +6,18 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import javax.swing.JOptionPane;
 import modelo.Principiante;
-import vista.FrmMenu;
+import vista.FrmLogin;
+//import vista.FrmMenu;
 import vista.FrmPrincipiante;
 
 public class ControladorPrincipiante implements ActionListener, WindowListener {
 
-    FrmMenu vMnu = new FrmMenu();
+    FrmLogin vLog = new FrmLogin();
     Principiante pri = new Principiante();
     FrmPrincipiante vPri = new FrmPrincipiante();
 
-    public ControladorPrincipiante(FrmPrincipiante vPri, FrmMenu vMnu, Principiante pri) {
-        this.vMnu = vMnu;
+    public ControladorPrincipiante(FrmPrincipiante vPri, FrmLogin vLog, Principiante pri) {
+        this.vLog = vLog;
         this.pri = pri;
         this.vPri = vPri;
 
