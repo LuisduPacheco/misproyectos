@@ -59,24 +59,30 @@ public class ControladorLogin implements ActionListener {
                         vAdmin.setVisible(true);
                         vAdmin.setLocationRelativeTo(vLog);
                         vAdmin.setResizable(false);
+                        vLog.txtPassLogin.setText("");
+                        vLog.txtUserLogin.setText("");
                         
                     } else if (uvo.getIdRolUsuarioFk() == 2) {
                         vAvan.setVisible(true);
                         vAvan.setLocationRelativeTo(vLog);
                         vAvan.setResizable(false);
                         System.out.println("Es Avanzado");
-                        
+                        vLog.txtPassLogin.setText("");
+                        vLog.txtUserLogin.setText("");
                     } else if (uvo.getIdRolUsuarioFk() == 3) {
                         vInter.setVisible(true);
                         vInter.setLocationRelativeTo(vLog);
                         vInter.setResizable(false);
                         System.out.println("Es intermedio");
-                        
+                        vLog.txtPassLogin.setText("");
+                        vLog.txtUserLogin.setText("");
                     } else if (uvo.getIdRolUsuarioFk() == 4) {
                         vPrin.setVisible(true);
                         vPrin.setLocationRelativeTo(vLog);
                         vPrin.setResizable(false);
                         System.out.println("Es principiante");
+                        vLog.txtPassLogin.setText("");
+                        vLog.txtUserLogin.setText("");
                     } else {
                         System.out.println("Error en el tipo de usuario");
                     }

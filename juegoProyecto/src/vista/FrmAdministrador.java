@@ -51,6 +51,7 @@ public class FrmAdministrador extends javax.swing.JFrame {
         btnElimina = new javax.swing.JButton();
         btnMuestra = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
+        btnReporte = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
@@ -162,7 +163,7 @@ public class FrmAdministrador extends javax.swing.JFrame {
             }
         });
 
-        btnMuestra.setText("Mostrar");
+        btnMuestra.setText("Limpiar campos");
         btnMuestra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMuestraActionPerformed(evt);
@@ -172,25 +173,30 @@ public class FrmAdministrador extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel11.setText("NOTA: Al registrar un nuevo usuario el ID lo asignará el programa, no debe llenar ese campo.");
 
+        btnReporte.setText("Reporte");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnRegistra)
-                .addGap(83, 83, 83)
-                .addComponent(btnActualiza)
-                .addGap(76, 76, 76)
-                .addComponent(btnElimina)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel11)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnRegistra)
+                                .addGap(35, 35, 35)
+                                .addComponent(btnActualiza))
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnElimina)
+                                .addComponent(jLabel9)))
+                        .addGap(38, 38, 38)
+                        .addComponent(btnMuestra)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnMuestra)
-                .addGap(33, 33, 33))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel11))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(btnReporte)
+                .addGap(27, 27, 27))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,7 +207,8 @@ public class FrmAdministrador extends javax.swing.JFrame {
                     .addComponent(btnRegistra)
                     .addComponent(btnActualiza)
                     .addComponent(btnElimina)
-                    .addComponent(btnMuestra))
+                    .addComponent(btnMuestra)
+                    .addComponent(btnReporte))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel11)
                 .addGap(0, 11, Short.MAX_VALUE))
@@ -329,6 +336,7 @@ public class FrmAdministrador extends javax.swing.JFrame {
     public javax.swing.JButton btnElimina;
     public javax.swing.JButton btnMuestra;
     public javax.swing.JButton btnRegistra;
+    public javax.swing.JButton btnReporte;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

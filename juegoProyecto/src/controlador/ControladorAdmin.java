@@ -137,6 +137,18 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
         }
 
     }
+    
+    public void limpiar(){
+        vAdmin.txtApellidoU.setText("");
+        vAdmin.txtContrasenia.setText("");
+        vAdmin.txtEdadU.setText("");
+        vAdmin.txtIdU.setText("");
+        vAdmin.txtNombreU.setText("");
+        vAdmin.txtRolU.setText("");
+        vAdmin.txtUsuario.setText("");
+    
+    }
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -200,7 +212,13 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
             }
 
         }
-    }
+        
+        //BOTON LIMPIAR 
+        if(e.getSource() == vAdmin.btnMuestra){
+            this.limpiar();
+    
+        }
+        }
 
     @Override
     public void windowOpened(WindowEvent e) {
@@ -213,6 +231,7 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
 
     @Override
     public void windowClosed(WindowEvent e) {
+        this.limpiar();
     }
 
     @Override

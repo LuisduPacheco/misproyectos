@@ -45,7 +45,7 @@ public class ControladorAvan implements ActionListener, WindowListener {
             vAvan.txtTrad1.setEditable(true);
         } else {
             avan.setI(avan.getI() + 1);
-            vAvan.jopMensaje.showMessageDialog(vAvan, "Error. Intento No. "+avan.getI());
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Error. Intento No. " + avan.getI());
             vAvan.txtNumero.setText("");
         }
 
@@ -56,7 +56,6 @@ public class ControladorAvan implements ActionListener, WindowListener {
     }
 
     public void habilitar() {
-        
         vAvan.btnNivel.setEnabled(false);
         vAvan.btnValida1.setEnabled(false);
         vAvan.btnValida2.setEnabled(false);
@@ -66,13 +65,58 @@ public class ControladorAvan implements ActionListener, WindowListener {
         vAvan.txtTrad1.setEditable(false);
         vAvan.txtTrad2.setEditable(false);
         vAvan.txtTrad3.setEditable(false);
-        
+
         vAvan.txtNumero.setText("");
         vAvan.txtTrad1.setText("");
         vAvan.txtTrad2.setText("");
         vAvan.txtTrad3.setText("");
-        
     }
+
+    public void setPalabras() {
+        vAvan.lblPalabra1.setText("Hello");
+        vAvan.lblPalabra2.setText("Mundo");
+        vAvan.lblPalabra3.setText("Keyboard");
+    }
+
+    public void traducir1() {
+        if (vAvan.txtTrad1.getText().equalsIgnoreCase(avan.getPalabra1())) {
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Correcto la tradución es: " + avan.getPalabra1());
+            vAvan.btnValida1.setEnabled(false);
+            vAvan.txtTrad1.setEditable(false);
+            vAvan.btnValida2.setEnabled(true);
+            vAvan.txtTrad2.setEditable(true);           
+        } else {
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Error, traducción incorrecta");
+            vAvan.txtTrad1.setText("");
+        }
+    }
+    
+    public void traducir2(){
+        if (vAvan.txtTrad2.getText().equalsIgnoreCase(avan.getPalabra2())) {
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Correcto la tradución es: " + avan.getPalabra2());
+            vAvan.btnValida2.setEnabled(false);
+            vAvan.txtTrad2.setEditable(false);
+            vAvan.btnValida3.setEnabled(true);
+            vAvan.txtTrad3.setEditable(true);           
+        } else {
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Error, traducción incorrecta");
+            vAvan.txtTrad2.setText("");
+        }
+    }
+    
+    public void traducir3(){
+        if (vAvan.txtTrad3.getText().equalsIgnoreCase(avan.getPalabra3())) {
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Correcto la tradución es: " + avan.getPalabra3());
+            vAvan.btnValida3.setEnabled(false);
+            vAvan.txtTrad3.setEditable(false);
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Felicidades, completaste el nivel avanzado");
+            vAvan.btnNivel.setEnabled(true);
+        } else {
+            vAvan.jopMensaje.showMessageDialog(vAvan, "Error, traducción incorrecta");
+            vAvan.txtTrad2.setText("");
+        }
+    }
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -84,8 +128,20 @@ public class ControladorAvan implements ActionListener, WindowListener {
         }
         if (e.getSource() == vAvan.btnValidaN) {
             this.validarNumero();
+            this.setPalabras();
         }
-
+        if (e.getSource() == vAvan.btnValida1) {
+            this.traducir1();
+        }
+        if (e.getSource() == vAvan.btnValida2) {
+            this.traducir2();
+        }
+        if (e.getSource() == vAvan.btnValida3) {
+            this.traducir3();
+        }
+        if (e.getSource() == vAvan.btnRegresa){
+            vAvan.dispose();
+        }
     }
 
     @Override
@@ -98,13 +154,13 @@ public class ControladorAvan implements ActionListener, WindowListener {
     @Override
     public void windowClosing(WindowEvent e) {
         //vAvan.btnInicio.setEnabled(true);
-       
+
     }
 
     @Override
     public void windowClosed(WindowEvent e) {
         this.habilitar();
-         vAvan.btnInicio.setEnabled(true);
+        vAvan.btnInicio.setEnabled(true);
     }
 
     @Override
@@ -117,7 +173,7 @@ public class ControladorAvan implements ActionListener, WindowListener {
 
     @Override
     public void windowActivated(WindowEvent e) {
-        
+
     }
 
     @Override
