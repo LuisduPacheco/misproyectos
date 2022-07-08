@@ -3,9 +3,16 @@ package modelo;
 import java.sql.ResultSet;
 import conexion.Conector;
 import java.util.ArrayList;
-
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.view.JasperViewer;
 public class UsuarioDAO implements ConsultasUsuario {
 
+    //VARIABLE GLOBAL PARA EL REPORTE
+   public JasperViewer jv;
+    
     @Override
     public ArrayList<UsuarioVO> validarLogin(String username, String contrasenia) {
         Conector c = new Conector();
@@ -119,7 +126,25 @@ public class UsuarioDAO implements ConsultasUsuario {
         c.desconectar();
         return true;
     }
-    
-    
+
+    @Override
+    public void reporte() { //metodo para generar el reporte
+        Conector c = new Conector();
+        try {
+            c.conectar();
+            //Definir una variable que encuentra el reporte
+            JasperReport reporte; 
+            //Ruta del reporte
+            String ruta = "src\\reportes\\reporteJuego.jasper";
+            //Asignacion de la ruta
+             reporte = (JasperReport) JRLoader.loadObjectFromFile(ruta);
+             JasperPrint jp = JasperFillManager.fillReport(ruta, null, c.connection);
+             JasperViewer jv = new JasperViewer(jp, false);
+             this.jv = jv;
+            
+        } catch (Exception e) {
+            System.err.println("Error [MReporte]: "+e.getMessage());
+        }
+  } 
 
 }

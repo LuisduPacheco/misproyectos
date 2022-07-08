@@ -43,6 +43,7 @@ public class FrmLogin extends javax.swing.JFrame {
         txtPassLogin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/GAME.png"))); // NOI18N
         jLabel1.setText("INTECAP GAME");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -52,8 +53,10 @@ public class FrmLogin extends javax.swing.JFrame {
         jLabel3.setText("Contraseña:");
 
         btnIngresa.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnIngresa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         btnIngresa.setText("Ingresar");
 
+        btnCancela.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar.png"))); // NOI18N
         btnCancela.setText("Cancelar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

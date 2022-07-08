@@ -108,6 +108,7 @@ public class FrmPrincipiante extends javax.swing.JFrame {
         jLabel6.setText("1. RESTA:");
 
         btnComprobar1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnComprobar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnComprobar1.setText("Comprobar");
 
         jLabel2.setText("(15 puntos)");
@@ -181,6 +182,7 @@ public class FrmPrincipiante extends javax.swing.JFrame {
         jLabel11.setText("3. SUMA");
 
         btnComprobar3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnComprobar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnComprobar3.setText("Comprobar");
 
         jLabel7.setText("(15 puntos)");
@@ -254,6 +256,7 @@ public class FrmPrincipiante extends javax.swing.JFrame {
         jLabel16.setText("2. RESTA");
 
         btnComprobar2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnComprobar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnComprobar2.setText("Comprobar");
 
         jLabel4.setText("(15 puntos)");
@@ -328,6 +331,7 @@ public class FrmPrincipiante extends javax.swing.JFrame {
         jLabel21.setText("4. SUMA");
 
         btnComprobar4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnComprobar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnComprobar4.setText("Comprobar");
 
         jLabel17.setText("(15 puntos)");
@@ -383,8 +387,10 @@ public class FrmPrincipiante extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        btnRegresa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/regreso.png"))); // NOI18N
         btnRegresa.setText("Regresar");
 
+        btnFinaliza.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/levelUp.png"))); // NOI18N
         btnFinaliza.setText("Subir de nivel");
 
         lblNum9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -405,6 +411,7 @@ public class FrmPrincipiante extends javax.swing.JFrame {
         jLabel14.setText("5. MULTIPLICACIÓN:");
 
         btnComprobar5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnComprobar5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnComprobar5.setText("Comprobar");
 
         jLabel24.setText("(20 puntos)");
@@ -479,6 +486,7 @@ public class FrmPrincipiante extends javax.swing.JFrame {
         jLabel23.setText("6. DIVISION");
 
         btnComprobar6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnComprobar6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnComprobar6.setText("Comprobar");
 
         jLabel25.setText("(20 puntos)");

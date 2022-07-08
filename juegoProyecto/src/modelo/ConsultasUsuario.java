@@ -9,4 +9,5 @@ public interface ConsultasUsuario {
     public ArrayList<UsuarioVO> consultar();
     public boolean actualizarU(UsuarioVO u);
     public boolean eliminarU(UsuarioVO u);
+    public void reporte();
 }

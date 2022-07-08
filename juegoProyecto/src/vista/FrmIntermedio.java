@@ -68,6 +68,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
         txtPregunta1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         txtPregunta1.setText("Pregunta 1: ");
 
+        btnValida1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnValida1.setText("Validar");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -101,6 +102,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
         txtPregunta3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         txtPregunta3.setText("Pregunta 3");
 
+        btnValida3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnValida3.setText("Validar");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -115,7 +117,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jcbOpcion3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
                         .addComponent(btnValida3)
                         .addGap(90, 90, 90))))
         );
@@ -128,7 +130,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jcbOpcion3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnValida3))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         jPanel4.setPreferredSize(new java.awt.Dimension(366, 102));
@@ -136,6 +138,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
         txtPregunta4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         txtPregunta4.setText("Pregunta 4:");
 
+        btnValida4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnValida4.setText("Validar");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -150,7 +153,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jcbOpcion4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 163, Short.MAX_VALUE)
                         .addComponent(btnValida4)
                         .addGap(72, 72, 72))))
         );
@@ -163,7 +166,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jcbOpcion4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnValida4))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         jPanel5.setPreferredSize(new java.awt.Dimension(366, 102));
@@ -171,6 +174,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
         txtPregunta2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         txtPregunta2.setText("Pregunta 2: ");
 
+        btnValida2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnValida2.setText("Validar");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -185,7 +189,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jcbOpcion2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                         .addComponent(btnValida2)
                         .addGap(74, 74, 74))))
         );
@@ -198,7 +202,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jcbOpcion2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnValida2))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         jPanel6.setPreferredSize(new java.awt.Dimension(366, 102));
@@ -206,6 +210,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
         txtPregunta5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         txtPregunta5.setText("Pregunta 1: ");
 
+        btnValida5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validar.png"))); // NOI18N
         btnValida5.setText("Validar");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -220,7 +225,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jcbOpcion5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 172, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
                         .addComponent(btnValida5)
                         .addGap(89, 89, 89))))
         );
@@ -233,9 +238,10 @@ public class FrmIntermedio extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jcbOpcion5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnValida5))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
+        btnRegresa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/regreso.png"))); // NOI18N
         btnRegresa.setText("Regresar");
         btnRegresa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,6 +249,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
             }
         });
 
+        btnNivel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/levelUp.png"))); // NOI18N
         btnNivel.setText("Subir de nivel");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -281,7 +288,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(20, 20, 20)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(402, Short.MAX_VALUE)))
+                    .addContainerGap(376, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -312,7 +319,7 @@ public class FrmIntermedio extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(80, 80, 80)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(282, Short.MAX_VALUE)))
+                    .addContainerGap(272, Short.MAX_VALUE)))
         );
 
         pack();

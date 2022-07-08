@@ -25,10 +25,11 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
 
         vAdmin.btnActualiza.addActionListener(this);
         vAdmin.btnElimina.addActionListener(this);
-        vAdmin.btnMuestra.addActionListener(this);
+        vAdmin.btnLimpiar.addActionListener(this);
         vAdmin.btnRegistra.addActionListener(this);
         vAdmin.addWindowListener(this);
         vAdmin.tblMostrar.addMouseListener(this);
+        vAdmin.btnReporte.addActionListener(this);
 
     }
 
@@ -137,8 +138,8 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
         }
 
     }
-    
-    public void limpiar(){
+
+    public void limpiar() {
         vAdmin.txtApellidoU.setText("");
         vAdmin.txtContrasenia.setText("");
         vAdmin.txtEdadU.setText("");
@@ -146,9 +147,14 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
         vAdmin.txtNombreU.setText("");
         vAdmin.txtRolU.setText("");
         vAdmin.txtUsuario.setText("");
-    
+
     }
-    
+
+    private void reporte() {
+        udao.reporte();
+        udao.jv.setDefaultCloseOperation(vAdmin.DISPOSE_ON_CLOSE);
+        udao.jv.setVisible(true);
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -212,13 +218,17 @@ public class ControladorAdmin implements WindowListener, ActionListener, MouseLi
             }
 
         }
-        
+
         //BOTON LIMPIAR 
-        if(e.getSource() == vAdmin.btnMuestra){
+        if (e.getSource() == vAdmin.btnLimpiar) {
             this.limpiar();
-    
+
         }
+
+        if (e.getSource() == vAdmin.btnReporte) {
+            this.reporte();
         }
+    }
 
     @Override
     public void windowOpened(WindowEvent e) {

@@ -71,7 +71,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="402" max="32767" attributes="0"/>
+                  <EmptySpace pref="376" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -111,7 +111,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="282" max="32767" attributes="0"/>
+                  <EmptySpace pref="272" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -204,6 +204,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnValida1">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/validar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Validar"/>
           </Properties>
           <AuxValues>
@@ -231,7 +234,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jcbOpcion3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="171" max="32767" attributes="0"/>
+                          <EmptySpace pref="145" max="32767" attributes="0"/>
                           <Component id="btnValida3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
@@ -249,7 +252,7 @@
                       <Component id="jcbOpcion3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnValida3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -279,6 +282,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnValida3">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/validar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Validar"/>
           </Properties>
           <AuxValues>
@@ -306,7 +312,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jcbOpcion4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="189" max="32767" attributes="0"/>
+                          <EmptySpace pref="163" max="32767" attributes="0"/>
                           <Component id="btnValida4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                       </Group>
@@ -324,7 +330,7 @@
                       <Component id="jcbOpcion4" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnValida4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -354,6 +360,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnValida4">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/validar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Validar"/>
           </Properties>
           <AuxValues>
@@ -381,7 +390,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jcbOpcion2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="187" max="32767" attributes="0"/>
+                          <EmptySpace pref="161" max="32767" attributes="0"/>
                           <Component id="btnValida2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                       </Group>
@@ -399,7 +408,7 @@
                       <Component id="jcbOpcion2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnValida2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -429,6 +438,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnValida2">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/validar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Validar"/>
           </Properties>
           <AuxValues>
@@ -456,7 +468,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jcbOpcion5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="172" max="32767" attributes="0"/>
+                          <EmptySpace pref="146" max="32767" attributes="0"/>
                           <Component id="btnValida5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
                       </Group>
@@ -474,7 +486,7 @@
                       <Component id="jcbOpcion5" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnValida5" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -504,6 +516,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnValida5">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/validar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Validar"/>
           </Properties>
           <AuxValues>
@@ -514,6 +529,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnRegresa">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/regreso.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Regresar"/>
       </Properties>
       <Events>
@@ -525,6 +543,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnNivel">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/levelUp.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Subir de nivel"/>
       </Properties>
       <AuxValues>

@@ -48,37 +48,60 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnValida1" pref="70" max="32767" attributes="0"/>
-                          <Component id="lblPalabra1" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtTrad1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="lblPalabra2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnRegresa" max="32767" attributes="0"/>
-                          <Component id="btnValida2" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtTrad2" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="btnInicio" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtTrad1" min="-2" pref="93" max="-2" attributes="0"/>
+                                          <Component id="lblPalabra1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnValida1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="lblPalabra2" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="txtTrad2" min="-2" pref="93" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="btnRegresa" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnValida2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtNumero" min="-2" pref="35" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="btnInicio" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtNumero" min="-2" pref="35" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -86,7 +109,7 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="lblPalabra3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtTrad3" max="32767" attributes="0"/>
-                      <Component id="btnValida3" alignment="0" pref="70" max="32767" attributes="0"/>
+                      <Component id="btnValida3" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <Component id="btnNivel" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -104,7 +127,6 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
@@ -127,7 +149,7 @@
                           <Component id="btnValida2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnValida3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="34" max="32767" attributes="0"/>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnRegresa" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnNivel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -142,7 +164,7 @@
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                               <Component id="txtNumero" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnValidaN" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnValidaN" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -203,6 +225,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnValidaN">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/validar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Validar"/>
       </Properties>
       <AuxValues>
@@ -258,6 +283,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnValida1">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/validar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Validar"/>
       </Properties>
       <AuxValues>
@@ -266,6 +294,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnValida2">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/validar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Validar"/>
       </Properties>
       <AuxValues>
@@ -274,6 +305,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnValida3">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/validar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Validar"/>
       </Properties>
       <AuxValues>
@@ -282,6 +316,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnRegresa">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/regreso.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Regresar"/>
       </Properties>
       <AuxValues>
@@ -290,6 +327,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnNivel">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/levelUp.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Subir de Nivel"/>
       </Properties>
       <AuxValues>
@@ -298,6 +338,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnInicio">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/correcto.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Iniciar"/>
       </Properties>
       <AuxValues>

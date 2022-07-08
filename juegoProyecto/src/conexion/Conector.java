@@ -16,7 +16,7 @@ public class Conector {
     private String cadena;
 
     //Crear objetos para la conexión
-    Connection connection;
+    public Connection connection;
     Statement statement;
 
     //Crear el método conectar
