@@ -83,10 +83,7 @@ public class contCuentas implements ActionListener, WindowListener, MouseListene
         cdao.imprimir(cuentas);
         
     }
-    
-    
-    
-
+  
     //Métodos a sobreescribir
     @Override
     public void actionPerformed(ActionEvent e) {
